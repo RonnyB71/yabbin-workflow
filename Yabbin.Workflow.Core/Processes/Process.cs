@@ -69,6 +69,7 @@ namespace Yabbin.Workflow.Core.Processes
                     break;
 
                 case Gateway gateway:
+                    gateway.OnGatewayEnd += DispatchEvent;
                     FlowElements.Add(gateway.Id, gateway);
                     break;
 

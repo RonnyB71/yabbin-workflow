@@ -1,17 +1,28 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Yabbin.Workflow.Core.Common;
+using Yabbin.Workflow.Core.Events;
 
 namespace Yabbin.Workflow.Core.Gateways
 {
     public class Gateway : FlowNode
     {
+        public event EventHandler<FlowElementEventArgs> OnGatewayStart;
+        public event EventHandler<FlowElementEventArgs> OnGatewayEnd;
+
+        protected virtual void GatewayStart(FlowElementEventArgs e)
+        {
+            EventHandler<FlowElementEventArgs> handler = OnGatewayStart;
+            handler?.Invoke(this, e);
+        }
+
+        protected virtual void GatewayEnd(FlowElementEventArgs e)
+        {
+            EventHandler<FlowElementEventArgs> handler = OnGatewayEnd;
+            handler?.Invoke(this, e);
+        }
         public override void InvokeFlow()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Gateway invoked.");
         }
     }
 }
