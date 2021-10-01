@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yabbin.Workflow.Console", "Yabbin.Workflow.Console\Yabbin.Workflow.Console.csproj", "{B3D73444-1F4D-4F44-A040-A176E4A1E6A6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yabbin.Workflow.Core", "Yabbin.Workflow.Core\Yabbin.Workflow.Core.csproj", "{32BCCD9D-9276-41A6-A325-2268C4F0A673}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{12893B49-C8DF-4950-981A-6A9B90BA9E17}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yabbin.Workflow.Core.Tests", "Yabbin.Workflow.Core.Tests\Yabbin.Workflow.Core.Tests.csproj", "{2EAC60CF-1952-4A0E-8BEE-AA2AD7D7D385}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3D73444-1F4D-4F44-A040-A176E4A1E6A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3D73444-1F4D-4F44-A040-A176E4A1E6A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3D73444-1F4D-4F44-A040-A176E4A1E6A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3D73444-1F4D-4F44-A040-A176E4A1E6A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32BCCD9D-9276-41A6-A325-2268C4F0A673}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32BCCD9D-9276-41A6-A325-2268C4F0A673}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32BCCD9D-9276-41A6-A325-2268C4F0A673}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32BCCD9D-9276-41A6-A325-2268C4F0A673}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EAC60CF-1952-4A0E-8BEE-AA2AD7D7D385}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EAC60CF-1952-4A0E-8BEE-AA2AD7D7D385}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EAC60CF-1952-4A0E-8BEE-AA2AD7D7D385}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EAC60CF-1952-4A0E-8BEE-AA2AD7D7D385}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {418A0946-4846-431C-8CE3-886FC7266CE9}
+	EndGlobalSection
+EndGlobal
