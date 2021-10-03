@@ -8,8 +8,6 @@ namespace Yabbin.Workflow.Core.Gateways
     {
         public override void InvokeFlow()
         {
-            base.InvokeFlow();
-
             Console.WriteLine($"{this} invoked");
 
             Console.WriteLine($"Starting gateway (Id: {Id}, Name: {Name}).");

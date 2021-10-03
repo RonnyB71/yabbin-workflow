@@ -13,7 +13,12 @@
 
         public void InvokeFlow()
         {
-            Outgoing.InvokeFlow();
+            if (Expression.Evaluate())
+            {
+                Outgoing.InvokeFlow();
+            }
         }
+
+        public IExpression Expression { get; set; } = new DefaultExpression();
     }
 }

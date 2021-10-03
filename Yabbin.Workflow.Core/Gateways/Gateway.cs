@@ -4,7 +4,7 @@ using Yabbin.Workflow.Core.Events;
 
 namespace Yabbin.Workflow.Core.Gateways
 {
-    public class Gateway : FlowNode
+    public abstract class Gateway : FlowNode
     {
         public event EventHandler<FlowElementEventArgs> OnGatewayStart;
         public event EventHandler<FlowElementEventArgs> OnGatewayEnd;
@@ -20,9 +20,6 @@ namespace Yabbin.Workflow.Core.Gateways
             EventHandler<FlowElementEventArgs> handler = OnGatewayEnd;
             handler?.Invoke(this, e);
         }
-        public override void InvokeFlow()
-        {
-            Console.WriteLine("Gateway invoked.");
-        }
+        public abstract override void InvokeFlow();
     }
 }
